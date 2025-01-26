@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Mart Sales Prediction</title>
+</head>
+<body>
+    <h1>Big Mart Sales Prediction</h1>
+    <form method="POST" action="/predict/">
+        {% csrf_token %}
+        <label for="weight">Item Weight:</label>
+        <input type="number" step="0.01" name="weight" id="weight" required><br>
+
+        <label for="price">Item MRP:</label>
+        <input type="number" step="0.01" name="price" id="price" required><br>
+
+        <label for="visibility">Item Visibility:</label>
+        <input type="number" step="0.01" name="visibility" id="visibility" required><br>
+
+        <label for="outlet_size">Outlet Size (1=Small, 2=Medium, 3=Large):</label>
+        <input type="number" name="outlet_size" id="outlet_size" required><br>
+
+        <label for="outlet_age">Outlet Age:</label>
+        <input type="number" name="outlet_age" id="outlet_age" required><br>
+
+        <button type="submit">Predict Sales</button>
+    </form>
+</body>
+</html>
