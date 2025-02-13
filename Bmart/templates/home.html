@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Mart Sales Prediction</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Big Mart Sales Prediction</a>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="display-4 mb-4">Welcome to the Big Mart Sales Prediction System</h1>
+                <p class="lead mb-5">Use this tool to predict sales for your items or upload a CSV file for batch prediction.</p>
+                
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm hover-shadow">
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-graph-up text-primary" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title mb-3">Single Prediction</h3>
+                                <p class="card-text mb-4">Predict sales for a single item by entering its details.</p>
+                                <a href="/predict-sales/" class="btn btn-primary mt-auto">Start Prediction</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm hover-shadow">
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-file-earmark-spreadsheet text-primary" viewBox="0 0 16 16">
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                        <path d="M3 12h10v-2H3v2zm0-3h10V7H3v2zm0-3h4V4H3v2zm5 0h5V4H8v2z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="card-title mb-3">Batch Prediction</h3>
+                                <p class="card-text mb-4">Upload a CSV file to predict sales for multiple items at once.</p>
+                                <a href="/batch-predict/" class="btn btn-primary mt-auto">Upload CSV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white py-4 mt-auto border-top">
+        <div class="container text-center">
+            <p class="text-muted mb-0">© 2025 Big Mart Sales Prediction System</p>
+        </div>
+    </footer>
+
+    <style>
+        .hover-shadow {
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .hover-shadow:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

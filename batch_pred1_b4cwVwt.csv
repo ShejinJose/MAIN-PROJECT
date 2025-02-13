@@ -1,0 +1,6 @@
+Item_Identifier,Item_Weight,Item_Fat_Content,Item_Visibility,Item_Type,Item_MRP,Outlet_Identifier,Outlet_Establishment_Year,Outlet_Size,Outlet_Location_Type,Outlet_Type
+FDW58,20.75,Low Fat,0.007565,Snack Foods,107.8622,OUT049,1999,Medium,Tier 1,Supermarket Type1
+FDW14,8.3,Regular,0.086765,Dairy,58.4537,OUT018,2009,Medium,Tier 3,Supermarket Type2
+FDW05,14.6,Low Fat,0.041091,Baking Goods,96.9726,OUT049,1999,Medium,Tier 1,Supermarket Type1
+FDN15,10.5,Regular,0.019278,Fruits and Vegetables,169.1448,OUT027,1985,Medium,Tier 3,Supermarket Type3
+FDT04,9.3,Low Fat,0.015778,Household,144.2434,OUT046,1997,Small,Tier 1,Supermarket Type1
