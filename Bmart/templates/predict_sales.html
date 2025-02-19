@@ -45,7 +45,7 @@
                     </div>
                     <div class="card-body p-4 p-md-5">
                         <!-- Show Prediction Result -->
-                        {% if predicted_sales %}
+                        <!-- {% if predicted_sales %}
                             <div class="alert alert-success text-center shadow-sm">
                                 <i class="fas fa-check-circle fa-2x mb-2"></i>
                                 <h4>Predicted Sales: ₹{{ predicted_sales }}</h4>
@@ -55,7 +55,44 @@
                                 <i class="fas fa-exclamation-circle fa-2x mb-2"></i>
                                 <strong>Error: {{ error }}</strong>
                             </div>
-                        {% endif %}
+                        {% endif %} -->
+                        {% if predicted_sales %}
+    <div class="alert alert-success text-center shadow-sm">
+        <i class="fas fa-check-circle fa-2x mb-2"></i>
+        <h4>Predicted Sales: ₹{{ predicted_sales }}</h4>
+    </div>
+
+    <div class="card shadow-lg mt-4">
+        <div class="card-header bg-primary text-white">
+            <h4><i class="fas fa-lightbulb me-2"></i> Insights & Recommendations</h4>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                {% for key, value in insights.items %}
+                    <li class="list-group-item">
+                        <strong>{{ key }}:</strong> {{ value }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sales Prediction Graph -->
+    <div class="card shadow-lg mt-4">
+        <div class="card-header bg-success text-white">
+            <h4><i class="fas fa-chart-line me-2"></i> Sales Prediction Distribution</h4>
+        </div>
+        <div class="card-body text-center">
+            <img src="{{ sales_graph }}" alt="Sales Graph" class="img-fluid">
+        </div>
+    </div>
+{% elif error %}
+    <div class="alert alert-danger text-center shadow-sm">
+        <i class="fas fa-exclamation-circle fa-2x mb-2"></i>
+        <strong>Error: {{ error }}</strong>
+    </div>
+{% endif %}
+
 
                         <!-- Form Sections -->
                         <form method="POST" action="" class="needs-validation" novalidate>
